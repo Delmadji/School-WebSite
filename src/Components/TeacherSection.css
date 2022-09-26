@@ -1,0 +1,46 @@
+:root {
+  --mainColor: #2c8575;
+  --hoverColor: #5faea1;
+  --textColor: #89888f;
+  --titleColor: #000420;
+}
+
+.teacherSection {
+  height: 808px;
+  background-color: #2c8575;
+}
+
+.teacherSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.teacherSection__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.teacherSection__top h2 {
+  color: #fff;
+  font-size: 40px;
+}
+
+.teacherSection__top p {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.teacherSection__card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.teacherSection__card .MuiSvgIcon-root {
+  border-radius: 50%;
+  padding: 10px;
+}

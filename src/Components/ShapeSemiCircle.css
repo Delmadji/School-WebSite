@@ -1,0 +1,19 @@
+.shape {
+  width: 160px;
+  height: 80px;
+  border-radius: 50% / 100% 100% 0 0;
+  border: 2px solid var(--hoverColor);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.shape h3 {
+  color: #fff;
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+.shape p {
+  color: #fff;
+  margin-top: -20px;
+}

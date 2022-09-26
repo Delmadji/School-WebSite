@@ -1,0 +1,28 @@
+.cardTeacher {
+  height: 430px;
+  width: 302px;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.cardTeacher__avatar {
+  padding-top: 10px;
+}
+
+.cardTeacher__info p {
+  text-align: center;
+  margin-top: -15px;
+  color: #89888f;
+}
+
+.cardTeacher__link {
+  padding-bottom: 20px;
+}
+
+.cardTeacher__link a {
+  padding: 5px;
+}

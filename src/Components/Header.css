@@ -1,0 +1,138 @@
+:root {
+  --mainColor: #2c8575;
+  --hoverColor: #5faea1;
+  --textColor: #89888f;
+  --titleColor: #000420;
+}
+.header {
+  background-color: var(--mainColor);
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: #fff 1px solid;
+}
+
+.headerLeft .headerLeft__logo {
+  color: #fff;
+}
+
+.headerLeft__icon {
+  display: none;
+}
+
+.headerRight {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 0;
+}
+
+.headerRight .headerRight__button .signUp__button {
+  cursor: pointer;
+  background: transparent;
+  color: #fff;
+  border: 0;
+  border-radius: 12px;
+  font-weight: 600;
+  width: 100px;
+  height: 45px;
+  margin-left: 30px;
+  box-shadow: 0 0 20px rgba(104, 85, 224, 0.2);
+  transition: 0.4s;
+}
+
+.headerRight .headerRight__button .signUp__button:hover {
+  color: white;
+  background-color: var(--hoverColor);
+}
+
+@media screen and (max-width: 816px) {
+  .container {
+    display: flex;
+    margin: 0;
+  }
+
+  .headerLeft {
+    display: flex;
+    flex: 0.7;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .headerLeft__icon {
+    display: block;
+    margin-left: 0;
+  }
+
+  .headerLeft__icon .MuiSvgIcon-root {
+    width: 40px;
+    height: 30px;
+  }
+
+  .headerLeft__icon .MuiSvgIcon-root:hover {
+    cursor: pointer;
+    background-color: var(--hoverColor);
+  }
+
+  .headerLeft .headerLeft__list {
+    display: none;
+  }
+
+  .headerLeft .headerLeft__list.Active {
+    display: block;
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .headerLeft .headerLeft__list.Active .MuiSvgIcon-root {
+    position: absolute;
+    top: 0;
+    right: 0.2rem;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  .headerLeft .headerLeft__list.Active .MuiSvgIcon-root:hover {
+    background-color: whitesmoke;
+  }
+  .headerLeft .headerLeft__list.Active .menu nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .headerLeft .headerLeft__list.Active .menu nav a {
+    color: black;
+    font-size: larger;
+    font-weight: bold;
+    padding: 30px;
+  }
+
+  .headerLeft .headerLeft__list.Active .menu > nav a:hover {
+    background-color: rgba(104, 85, 224, 1);
+    border: 1px solid rgba(104, 85, 224, 1);
+    border-radius: 5px;
+    padding: 20px 100%;
+    color: #fff;
+    cursor: pointer;
+  }
+  .headerRight {
+    flex: 0.3;
+  }
+
+  .headerRight .headerRight__list {
+    display: none;
+  }
+
+  /*.headerRight .headerRight__button .signUp__button {
+  }*/
+}

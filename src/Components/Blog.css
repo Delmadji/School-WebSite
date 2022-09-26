@@ -1,0 +1,23 @@
+:root {
+  --mainColor: #2c8575;
+  --hoverColor: #5faea1;
+  --textColor: #89888f;
+  --titleColor: #000420;
+}
+
+.blog {
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.blog .container h1 {
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.blogCards {
+  display: flex;
+  justify-content: space-between;
+}

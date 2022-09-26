@@ -1,0 +1,64 @@
+:root {
+  --mainColor: #2c8575;
+  --hoverColor: #5faea1;
+  --textColor: #89888f;
+  --titleColor: #000420;
+}
+.home {
+  padding-top: 70px;
+  height: 767px;
+  background-color: var(--mainColor);
+}
+.home .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.homeLeft {
+  width: 600px;
+}
+
+.home .container .homeLeft h1 {
+  color: #fff;
+  font-size: 66px;
+  font-weight: bold;
+}
+
+.home .container .homeLeft p {
+  color: #fff;
+  font-size: 17px;
+}
+
+.home .container .homeLeft > button {
+  border: none;
+  height: 60px;
+  width: 177px;
+  background-color: var(--hoverColor);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 15px;
+  margin-top: 55px;
+}
+
+.home .container .homeLeft > button:hover {
+  cursor: pointer;
+}
+.homeRight {
+  display: flex;
+  right: 0 !important;
+}
+.homeRight .imgOne {
+  position: relative;
+  right: -4rem;
+}
+
+.homeRight .imgTow {
+  position: relative;
+  top: 10rem;
+  right: 0;
+}

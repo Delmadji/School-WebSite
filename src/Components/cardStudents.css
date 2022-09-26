@@ -1,0 +1,43 @@
+.cardStudents {
+  width: 302px;
+  height: 308px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: 20px;
+  border-radius: 20px;
+}
+.cardStudents__top p {
+  line-height: 30px;
+  font-size: 20px;
+  color: #89888f;
+}
+
+.cardStudents__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px dashed #89888f;
+  margin-top: 40px;
+  padding-top: 20px;
+}
+
+.cardStudents__bottom__left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cardStudents__bottom__left .avatar {
+  padding-right: 10px;
+}
+.cardStudents__bottom__left h3 {
+  font-size: 16px;
+}
+.cardStudents__bottom__left p {
+  font-size: 14px;
+  margin-top: -10px;
+}
+
+.cardStudents__bottom__right .MuiSvgIcon-root {
+  color: #fdb600;
+  height: 20px;
+  width: 20px;
+}

@@ -1,0 +1,39 @@
+:root {
+  --mainColor: #2c8575;
+  --hoverColor: #5faea1;
+  --textColor: #89888f;
+  --titleColor: #000420;
+}
+.testimonialSection {
+  height: 750px;
+  text-align: center;
+  padding-top: 100px;
+}
+.testimonialSection .cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.buttons button {
+  height: 45px;
+  width: 77px;
+  background-color: transparent;
+  border: 2px solid var(--hoverColor);
+  border-radius: 20px;
+  color: var(--hoverColor);
+  margin: 10px;
+}
+
+.buttons button.active {
+  color: #fff;
+  background-color: var(--hoverColor);
+}

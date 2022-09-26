@@ -1,0 +1,46 @@
+:root {
+  --mainColor: #2c8575;
+  --hoverColor: #5faea1;
+  --textColor: #89888f;
+  --titleColor: #000420;
+}
+
+.classes {
+  margin-bottom: 50px;
+  padding: 50px 0 50px 0;
+}
+
+.classes .classes__title {
+  text-align: center;
+}
+
+.classes .classes__title h1 {
+  font-size: 40px;
+}
+
+.classes .classes__cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.classes .classes__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.classes .classes__buttons button {
+  height: 45px;
+  width: 77px;
+  background-color: transparent;
+  border: 2px solid var(--hoverColor);
+  border-radius: 20px;
+  color: var(--hoverColor);
+  margin: 10px;
+}
+
+.classes .classes__buttons button.active {
+  color: #fff;
+  background-color: var(--hoverColor);
+}

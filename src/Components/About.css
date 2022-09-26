@@ -1,0 +1,73 @@
+:root {
+  --mainColor: #2c8575;
+  --hoverColor: #5faea1;
+  --textColor: #89888f;
+  --titleColor: #000420;
+}
+
+.about {
+  padding-top: 150px;
+  height: 836px;
+  background-color: var(--mainColor);
+}
+
+.about .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about .container .aboutLeft {
+  display: flex;
+}
+.about .container .aboutLeft .imageTow {
+  position: relative;
+  right: 5rem;
+  top: 12rem;
+  z-index: 1;
+}
+
+.about .container .aboutLeft .imageThree {
+  position: relative;
+  right: 12rem;
+  z-index: 0;
+}
+
+.about .container .aboutRight__top h3 {
+  color: #fff;
+  font-size: 40px;
+}
+
+.about .container .aboutRight__top p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.8;
+  margin: 20px 0;
+}
+
+.aboutRight__bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+.aboutRight__top button {
+  border: none;
+  height: 60px;
+  width: 177px;
+  background-color: var(--hoverColor);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 15px;
+  margin-top: 55px;
+}
+
+.aboutRight__top button:hover {
+  cursor: pointer;
+}

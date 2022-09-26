@@ -1,0 +1,94 @@
+:root {
+  --mainColor: #2c8575;
+  --hoverColor: #5faea1;
+  --textColor: #89888f;
+  --titleColor: #000420;
+}
+
+.footer {
+  height: 580px;
+  background-color: var(--mainColor);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__col {
+  color: #fff;
+}
+.footer__col ul {
+  padding-left: 0;
+}
+
+.footer__col ul h2 {
+  margin-bottom: 40px;
+}
+
+.footer__col > ul > li {
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.footer__col ul li h4 {
+  margin: 0;
+}
+
+.footer__col ul li p {
+  color: #fcf9ed;
+  margin: 0;
+}
+
+.footer__col form {
+  width: 429px;
+  height: 50px;
+  border: 2px solid #5faea1;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4px 0 4px;
+}
+
+.footer__col form input {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.footer__col form button {
+  background: none;
+  border: none;
+  color: #fff;
+  height: 42px;
+  width: 132px;
+  background-color: #5faea1;
+  border-radius: 25px;
+  font-size: 16px;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid #f7f2db;
+  margin-top: 50px;
+  padding: 40px 0 40px 0;
+}
+
+.footer__bottom__left p {
+  color: #fff;
+}
+
+.footer__bottom__right .MuiSvgIcon-root {
+  color: #fff;
+  padding: 10px;
+  background-color: #5faea1;
+  border-radius: 50%;
+  margin-left: 10px;
+}

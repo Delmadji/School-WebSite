@@ -1,0 +1,35 @@
+:root {
+  --mainColor: #2c8575;
+  --hoverColor: #5faea1;
+}
+.menu nav {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.menu > nav a {
+  margin-left: 10px;
+  padding: 5px 0;
+  color: #fff;
+  width: 80px;
+  text-align: center;
+}
+
+.menu > nav a:hover {
+  background-color: var(--hoverColor);
+  border: 1px solid var(--hoverColor);
+  border-radius: 5px;
+
+  color: #fff;
+  cursor: pointer;
+}
+.menu > nav a {
+  text-decoration: none;
+}
+
+.menu > nav a.active {
+  background-color: var(--hoverColor);
+  border: 1px solid var(--hoverColor);
+  border-radius: 5px;
+}

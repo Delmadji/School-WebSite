@@ -1,0 +1,23 @@
+.services {
+  margin: 120px 0;
+}
+.services .container .servicesTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.services .container .servicesTop .servicesTop__left {
+  color: #000420;
+  font-size: 40px;
+}
+
+.services .container .servicesTop .servicesTop__right p {
+  font-size: 16px;
+  color: #89888f;
+  line-height: 2;
+}
+.servicesBottom {
+  display: flex;
+  justify-content: space-between;
+}

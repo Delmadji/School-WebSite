@@ -1,0 +1,18 @@
+.card {
+  width: 301px;
+  height: 289px;
+  border: 2px solid whitesmoke;
+  border-radius: 30px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.card .cardTitle {
+  margin: 25px 0;
+}
+
+.card .cardParagraphe {
+  font-size: 16px;
+  color: #89888f;
+  line-height: 2;
+}

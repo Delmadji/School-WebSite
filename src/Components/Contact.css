@@ -1,0 +1,62 @@
+:root {
+  --mainColor: #2c8575;
+  --hoverColor: #5faea1;
+  --textColor: #89888f;
+  --titleColor: #000420;
+}
+.contact {
+  height: 565px;
+  background-color: var(--mainColor);
+  padding-top: 100px;
+}
+
+.contact .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact__left h3 {
+  color: #fff;
+  font-size: 40px;
+}
+
+.contact__left p {
+  color: #fff;
+  font-size: 16px;
+}
+
+.contact__right input {
+  margin: 20px;
+  color: var(--textColor);
+  font-size: 16px;
+}
+
+.contact__right .name,
+.contact__right .email {
+  height: 60px;
+  width: 315px;
+  border: none;
+  border-radius: 10px;
+  padding-left: 20px;
+}
+
+.contact__right .message {
+  width: 660px;
+  height: 135px;
+  border: none;
+  border-radius: 10px;
+  padding: 20px 12px !important;
+  margin: 20px;
+  color: var(--textColor);
+  font-size: 16px;
+}
+
+.contact__right .button {
+  width: 230px;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--hoverColor);
+  color: #fff;
+}
