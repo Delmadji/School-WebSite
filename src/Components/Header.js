@@ -9,10 +9,13 @@ import { useTranslation } from "react-i18next";
 function Header() {
   const [t, i18n] = useTranslation();
   const [classActive, setClassActive] = useState("");
+  const b;
 
   const setClass = () => {
     classActive === "Active" ? setClassActive(" ") : setClassActive("Active");
   };
+
+
   return (
     <div className="header">
       <div className="container">
