@@ -16,7 +16,7 @@
 }
 
 .homeLeft {
-  width: 600px;
+  max-width: 600px;
 }
 
 .home .container .homeLeft h1 {
@@ -61,4 +61,73 @@
   position: relative;
   top: 10rem;
   right: 0;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .home {
+    height: 100%;
+  }
+  .home .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .homeLeft {
+    padding: 0 10px 0 10px;
+    text-align: center;
+  }
+
+  .homeRight {
+    padding-bottom: 240px;
+    padding-top: 40px;
+  }
+
+  .homeRight .imgOne {
+    max-width: 100px;
+    position: relative;
+    right: 1rem;
+  }
+
+  .homeRight .imgTow {
+    position: relative;
+    top: 20rem;
+    right: -1rem;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 1200px) {
+  .home {
+    padding-bottom: 120px;
+  }
+
+  .home .container {
+    margin: 0;
+    padding: 0 10px 0 10px;
+  }
+
+  .homeLeft {
+    max-width: 600px;
+  }
+
+  .homeRight .imgOne {
+    max-width: 100px;
+    position: relative;
+    right: -1rem;
+  }
+
+  .homeRight .imgTow {
+    position: relative;
+    top: 24rem;
+    right: 1rem;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }

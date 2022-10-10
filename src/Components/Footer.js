@@ -68,7 +68,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="footer__col">
+          <div className="footer__col subscribe">
             <h2>Subscribe</h2>
             <h4>Subscribe</h4>
             <form>

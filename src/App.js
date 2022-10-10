@@ -14,6 +14,8 @@ import Services from "./Components/Services";
 import TeacherSection from "./Components/TeacherSection";
 import TestimonialSection from "./Components/TestimonialSection";
 import Footer from "./Components/Footer";
+import SlideSwipeTest from "./Components/SlideSwipeTest";
+import Translation from "./Components/Translation";
 
 function App() {
   return (
@@ -40,6 +42,8 @@ function App() {
       <Contact />
       <Blog />
       <Footer />
+
+      <Translation />
     </>
   );
 }

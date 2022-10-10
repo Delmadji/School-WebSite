@@ -4,7 +4,7 @@ import StarIcon from "@mui/icons-material/Star";
 import Avatar from "@mui/material/Avatar";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import PeopleAltIcon from "@mui/icons-material/PeopleAlt";
-import EnglishClass from "../assets/image/EnglichClass.png";
+import EnglichClass from "../assets/image/EnglichClass.png";
 import Image from "../assets/image/me.jpeg";
 
 function CardClasses() {
@@ -18,7 +18,7 @@ function CardClasses() {
   return (
     <div className="cardClasses">
       <div className="cardClasses__image">
-        <img src={EnglishClass} alt="hhh" />
+        <img src={EnglichClass} alt="hhh" />
       </div>
       <div className="cardClasses__price">
         <p>$69</p>

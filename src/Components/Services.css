@@ -1,5 +1,5 @@
 .services {
-  margin: 120px 0;
+  margin: 100px 0;
 }
 .services .container .servicesTop {
   display: flex;
@@ -20,4 +20,16 @@
 .servicesBottom {
   display: flex;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 816px) {
+  .services .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .services .container .servicesTop {
+    display: flex;
+    flex-direction: column;
+  }
 }

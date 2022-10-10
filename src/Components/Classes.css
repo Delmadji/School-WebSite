@@ -44,3 +44,10 @@
   color: #fff;
   background-color: var(--hoverColor);
 }
+
+@media screen and (max-width: 816px) {
+  .classes .container {
+    display: flex;
+    flex-direction: column;
+  }
+}

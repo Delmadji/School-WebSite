@@ -5,7 +5,6 @@
   --titleColor: #000420;
 }
 .contact {
-  height: 565px;
   background-color: var(--mainColor);
   padding-top: 100px;
 }
@@ -59,4 +58,30 @@
   border-radius: 10px;
   background-color: var(--hoverColor);
   color: #fff;
+}
+
+@media screen and (max-width: 816px) {
+  .contact .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .contact .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 695px) {
+  .contact__right .message {
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .contact__right .message {
+    max-width: 360px;
+  }
 }

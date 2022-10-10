@@ -4,7 +4,10 @@ import ReorderIcon from "@mui/icons-material/Reorder";
 import CloseIcon from "@mui/icons-material/Close";
 import Menu from "./Menu";
 
+import { useTranslation } from "react-i18next";
+
 function Header() {
+  const [t, i18n] = useTranslation();
   const [classActive, setClassActive] = useState("");
 
   const setClass = () => {
@@ -21,14 +24,14 @@ function Header() {
               <Menu setClassActive={setClassActive} />
             </div>
           </div>
-          <h2 className="headerLeft__logo">Siradj School</h2>
+          <h2 className="headerLeft__logo">{t("Siradj School")}</h2>
         </div>
         <div className="headerRight">
           <div className="headerRight__list">
             <Menu />
           </div>
           <div className="headerRight__button">
-            <button className="signUp__button">Sign Up</button>
+            <button className="signUp__button">{t("Sign Up")}</button>
           </div>
         </div>
       </div>

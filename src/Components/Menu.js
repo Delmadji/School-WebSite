@@ -2,36 +2,39 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Menu.css";
 
+import { useTranslation } from "react-i18next";
+
 function Menu({ setClassActive }) {
+  const [t, i18n] = useTranslation();
   return (
     <div className="menu">
       <nav>
         <NavLink to="/" onClick={() => setClassActive("")}>
-          Home
+          {t("Home")}
         </NavLink>
 
         <NavLink to="/Programs" onClick={() => setClassActive("")}>
-          Programs
+          {t("Programs")}
         </NavLink>
 
         <NavLink to="/About" onClick={() => setClassActive("")}>
-          About
+          {t("About")}
         </NavLink>
 
         <NavLink to="/Classes" onClick={() => setClassActive("")}>
-          Classes
+          {t("Classes")}
         </NavLink>
 
         <NavLink to="/Pricing" onClick={() => setClassActive("")}>
-          pricing
+          {t("pricing")}
         </NavLink>
 
         <NavLink to="/Blog" onClick={() => setClassActive("")}>
-          Blog
+          {t("Blog")}
         </NavLink>
 
         <NavLink to="/Contact" onClick={() => setClassActive("")}>
-          Contact
+          {t("Contact")}
         </NavLink>
       </nav>
     </div>

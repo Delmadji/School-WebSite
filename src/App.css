@@ -10,5 +10,18 @@
   background-repeat: no-repeat;
 }
 .container {
-  margin: 0 83px;
+  max-width: 1350px;
+  margin: 0 90px;
+}
+
+.arab {
+  max-width: 1350px;
+  margin: 0 90px;
+  direction: rtl;
+}
+
+@media screen and (max-width: 850px) {
+  .container {
+    padding: 20px;
+  }
 }

@@ -26,3 +26,8 @@
 .cardTeacher__link a {
   padding: 5px;
 }
+
+.cardTeacher__link a .MuiSvgIcon-root {
+  padding: 10px;
+  border-radius: 50%;
+}

@@ -6,34 +6,34 @@ import imageThree from "../assets/image/Rectangle 9573.png";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import ShapeSemiCircle from "./ShapeSemiCircle";
 
+import { useTranslation } from "react-i18next";
+
 function About() {
+  const [t, i18n] = useTranslation();
   return (
     <div className="about">
-      <div className="container">
+      <div className={"container" + (i18n == "ar" ? "arab" : "")}>
         <div className="aboutLeft">
           <img className="imageOne" src={imageOne} alt="imageOne" />
           <img className="imageTow" src={imageTow} alt="imageTow" />
-          <img className="imageThree" src={imageThree} alt="imageThree" />
+          {/* <img className="imageThree" src={imageThree} alt="imageThree" />*/}
         </div>
         <div className="aboutRight">
           <div className="aboutRight__top">
-            <h3>
-              We Special Care For <br /> Your Children
-            </h3>
+            <h3>{t(`We Special Care For Your Children`)}</h3>
             <p>
-              Varius est lacus, consequat, sit arcu. Convallis quis posuere
-              euismod tempus eros, malesuada gravida. Blandit aliquet justo
-              risus, mi et. a Et at tincidunt diam, mauris amet scelerisque
-              volutpat nisl. Sem is per felis et, orci duis. Elementum.
+              {t(
+                "Varius est lacus, consequat, sit arcu. Convallis quis posuere euismod tempus eros, malesuada gravida. Blandit aliquet justo risus, mi et. a Et at tincidunt diam, mauris amet scelerisque volutpat nisl. Sem is per felis et, orci duis. Elementum."
+              )}
             </p>
             <button>
-              Enroll Now <ArrowRightAltIcon />
+              {t("Enroll Now")} <ArrowRightAltIcon />
             </button>
           </div>
           <div className="aboutRight__bottom">
-            <ShapeSemiCircle title="557+" desc="Students Enrolled" />
-            <ShapeSemiCircle title="27+" desc="Total Teacher" />
-            <ShapeSemiCircle title="557+" desc="Students Enrolled" />
+            <ShapeSemiCircle title="557+" desc={t("Students Enrolled")} />
+            <ShapeSemiCircle title="27+" desc={t("Total Teacher")} />
+            <ShapeSemiCircle title="557+" desc={t("Students Enrolled")} />
           </div>
         </div>
       </div>

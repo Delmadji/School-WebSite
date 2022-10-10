@@ -59,6 +59,7 @@
     flex: 0.7;
     justify-content: space-around;
     align-items: center;
+    color: #fff;
   }
 
   .headerLeft__icon {
@@ -83,7 +84,7 @@
   .headerLeft .headerLeft__list.Active {
     display: block;
     position: fixed;
-    background-color: #fff;
+    background-color: var(--mainColor);
     width: 100%;
     height: 100%;
     top: 0;
@@ -94,13 +95,17 @@
   .headerLeft .headerLeft__list.Active .MuiSvgIcon-root {
     position: absolute;
     top: 0;
-    right: 0.2rem;
+    right: 0.5rem;
     width: 30px;
     height: 30px;
     cursor: pointer;
   }
   .headerLeft .headerLeft__list.Active .MuiSvgIcon-root:hover {
     background-color: whitesmoke;
+  }
+
+  .headerLeft .headerLeft__list.Active .menu {
+    z-index: 100;
   }
   .headerLeft .headerLeft__list.Active .menu nav {
     display: flex;
@@ -111,15 +116,15 @@
   }
 
   .headerLeft .headerLeft__list.Active .menu nav a {
-    color: black;
+    color: white;
     font-size: larger;
     font-weight: bold;
     padding: 30px;
   }
 
   .headerLeft .headerLeft__list.Active .menu > nav a:hover {
-    background-color: rgba(104, 85, 224, 1);
-    border: 1px solid rgba(104, 85, 224, 1);
+    background-color: var(--hoverColor);
+    border: 1px solid var(--hoverColor);
     border-radius: 5px;
     padding: 20px 100%;
     color: #fff;
@@ -135,4 +140,11 @@
 
   /*.headerRight .headerRight__button .signUp__button {
   }*/
+}
+
+@media screen and (max-width: 1200px) {
+  .header .container {
+    margin: 0;
+    padding: 0 10px 0 10px;
+  }
 }

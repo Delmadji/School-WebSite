@@ -1,6 +1,6 @@
 .cardClasses {
-  width: 302px;
-  height: 428px;
+  width: 300px;
+  height: 470px;
   border-radius: 92px 92px 20px 20px;
   margin-top: 50px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -9,7 +9,7 @@
 .cardClasses__image {
   width: 298px;
   height: 181px;
-  background-color: url("../assets/image/EnglichClass.png");
+
   border-radius: 100px 100px 100px 100px;
   position: relative;
   top: 5px;

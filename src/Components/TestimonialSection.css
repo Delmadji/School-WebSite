@@ -37,3 +37,10 @@
   color: #fff;
   background-color: var(--hoverColor);
 }
+
+@media screen and (max-width: 816px) {
+  .testimonialSection .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
