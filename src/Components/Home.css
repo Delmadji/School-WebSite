@@ -7,6 +7,7 @@
 .home {
   padding-top: 70px;
   height: 767px;
+  width: 100%;
   background-color: var(--mainColor);
 }
 .home .container {
@@ -119,7 +120,7 @@
   .homeRight .imgTow {
     position: relative;
     top: 24rem;
-    right: 1rem;
+    right: 2rem;
   }
 }
 /* Medium devices (landscape tablets, 768px and up) */
@@ -128,6 +129,20 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 }
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+/*min screen */
+@media only screen and (max-width: 390px) {
+  .homeRight {
+    max-width: 390px;
+  }
+  .homeRight .imgOne {
+    max-width: 100px;
+    position: relative;
+    right: 1rem;
+  }
+
+  .homeRight .imgTow {
+    position: relative;
+    top: 24rem;
+    right: 4rem;
+  }
 }

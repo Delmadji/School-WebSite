@@ -33,7 +33,7 @@ function Blog() {
             pagination={{
               clickable: true,
             }}
-            navigation={{ clickable: true }}
+            navigation={false}
             modules={[FreeMode, Pagination, Navigation]}
             breakpoints={{
               // when window width is >= 320px
