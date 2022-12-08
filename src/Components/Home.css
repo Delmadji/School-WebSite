@@ -4,7 +4,8 @@
   --textColor: #89888f;
   --titleColor: #000420;
 }
-.home {
+
+/* .home {
   padding-top: 70px;
   height: 767px;
   width: 100%;
@@ -22,7 +23,7 @@
 
 .home .container .homeLeft h1 {
   color: #fff;
-  font-size: 66px;
+  font-size: 30px;
   font-weight: bold;
 }
 
@@ -62,10 +63,78 @@
   position: relative;
   top: 10rem;
   right: 0;
+} */
+
+/*min screen */
+
+.home {
+  padding-top: 40px;
+  width: 100%;
+  background-color: var(--mainColor);
+}
+.home .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
+.home .container .homeLeft h1 {
+  color: #fff;
+  font-size: 67px;
+  font-weight: bold;
+}
+
+.home .container .homeLeft p {
+  color: #fff;
+  font-size: 17px;
+}
+
+.home .container .homeLeft > button {
+  border: none;
+  height: 60px;
+  width: 177px;
+  background-color: var(--hoverColor);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 15px;
+  margin-top: 55px;
+}
+
+.home .container .homeLeft > button:hover {
+  cursor: pointer;
+}
+.homeRight {
+  max-width: 390px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.homeRight .imgOne img {
+  max-width: 300px;
+}
+.homeRight .imgTow img {
+  max-width: 300px;
+}
+/* .homeRight .imgOne {
+    max-width: 100px;
+    position: relative;
+    right: 1rem;
+  }
+
+  .homeRight .imgTow {
+    position: relative;
+    top: 24rem;
+    right: 4rem;
+  } */
+
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   .home {
     height: 100%;
   }
@@ -95,9 +164,75 @@
     top: 20rem;
     right: -1rem;
   }
-}
+} */
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 1200px) {
+  .home {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    width: 100%;
+    background-color: var(--mainColor);
+  }
+  .home .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    align-items: center;
+  }
+
+  .homeLeft {
+    max-width: 600px;
+  }
+
+  .home .container .homeLeft h1 {
+    color: #fff;
+    font-size: 67px;
+    font-weight: bold;
+  }
+
+  .home .container .homeLeft p {
+    color: #fff;
+    font-size: 17px;
+  }
+
+  .home .container .homeLeft > button {
+    border: none;
+    height: 60px;
+    width: 177px;
+    background-color: var(--hoverColor);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 15px;
+    margin-top: 55px;
+  }
+
+  .home .container .homeLeft > button:hover {
+    cursor: pointer;
+  }
+  .homeRight {
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .homeRight .imgOne {
+    position: relative;
+    right: -4rem;
+  }
+
+  .homeRight .imgTow {
+    position: relative;
+    top: 4rem;
+    right: 0;
+  }
+}
+
+/*
   .home {
     padding-bottom: 120px;
   }
@@ -125,24 +260,134 @@
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-}
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
-/*min screen */
-@media only screen and (max-width: 390px) {
-  .homeRight {
-    max-width: 390px;
+  .home {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    width: 100%;
+    background-color: var(--mainColor);
   }
+  .home .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    align-items: center;
+  }
+
+  .homeLeft {
+    max-width: 600px;
+  }
+
+  .home .container .homeLeft h1 {
+    color: #fff;
+    font-size: 67px;
+    font-weight: bold;
+  }
+
+  .home .container .homeLeft p {
+    color: #fff;
+    font-size: 17px;
+  }
+
+  .home .container .homeLeft > button {
+    border: none;
+    height: 60px;
+    width: 177px;
+    background-color: var(--hoverColor);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 15px;
+    margin-top: 55px;
+  }
+
+  .home .container .homeLeft > button:hover {
+    cursor: pointer;
+  }
+  .homeRight {
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+  }
+
   .homeRight .imgOne {
-    max-width: 100px;
     position: relative;
-    right: 1rem;
+    right: -4rem;
   }
 
   .homeRight .imgTow {
     position: relative;
-    top: 24rem;
-    right: 4rem;
+    top: 4rem;
+    right: 0;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .home {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    width: 100%;
+    background-color: var(--mainColor);
+  }
+  .home .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    align-items: center;
+  }
+
+  .homeLeft {
+    max-width: 600px;
+  }
+
+  .home .container .homeLeft h1 {
+    color: #fff;
+    font-size: 67px;
+    font-weight: bold;
+  }
+
+  .home .container .homeLeft p {
+    color: #fff;
+    font-size: 17px;
+  }
+
+  .home .container .homeLeft > button {
+    border: none;
+    height: 60px;
+    width: 177px;
+    background-color: var(--hoverColor);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 15px;
+    margin-top: 55px;
+  }
+
+  .home .container .homeLeft > button:hover {
+    cursor: pointer;
+  }
+  .homeRight {
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .homeRight .imgOne {
+    position: relative;
+    right: -4rem;
+  }
+
+  .homeRight .imgTow {
+    position: relative;
+    top: 4rem;
+    right: 0;
   }
 }

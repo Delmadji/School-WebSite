@@ -130,7 +130,7 @@
   }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 390px) {
   .about .container .aboutLeft {
     max-width: 390px;
   }
@@ -139,5 +139,9 @@
     right: 15rem;
     top: 20rem;
     z-index: 1;
+  }
+
+  .about .container .aboutLeft .imageOne {
+    right: 10px;
   }
 }

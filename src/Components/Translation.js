@@ -1,6 +1,5 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
@@ -8,7 +7,7 @@ import Select, { SelectChangeEvent } from "@mui/material/Select";
 import { styled } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
 
-//fnction
+//functions
 
 const BootstrapInput = styled(InputBase)(({ theme }) => ({
   "label + &": {

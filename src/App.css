@@ -8,6 +8,9 @@
   /* background-image: url("./assets/image/bcg.png");*/
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .container {
   max-width: 1350px;
@@ -21,6 +24,12 @@
 }
 
 @media screen and (max-width: 850px) {
+  .container {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 390px) {
   .container {
     padding: 20px;
   }
