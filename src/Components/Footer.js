@@ -84,9 +84,7 @@ function Footer() {
         </div>
         <div className="footer__bottom">
           <div className="footer__bottom__left">
-            <p>
-              &copy; 2022 GRINGO - All Rights Reserved Made by Younes Delmadji
-            </p>
+            <p>&copy; 2021 riead - All Rights Reserved Made by Ibne Riead</p>
           </div>
           <div className="footer__bottom__right">
             <InstagramIcon />

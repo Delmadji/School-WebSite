@@ -40,8 +40,8 @@ function TeacherSection() {
             pagination={{
               clickable: true,
             }}
-            navigation={false}
-            modules={[FreeMode, Pagination]}
+            navigation={{ clickable: true }}
+            modules={[FreeMode, Pagination, Navigation]}
             breakpoints={{
               // when window width is >= 320px
               320: {

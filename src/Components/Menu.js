@@ -2,8 +2,6 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Menu.css";
 
-import Translation from "./Translation";
-
 import { useTranslation } from "react-i18next";
 
 function Menu({ setClassActive }) {
@@ -38,7 +36,6 @@ function Menu({ setClassActive }) {
         <NavLink to="/Contact" onClick={() => setClassActive("")}>
           {t("Contact")}
         </NavLink>
-        <Translation />
       </nav>
     </div>
   );

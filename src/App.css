@@ -8,13 +8,10 @@
   /* background-image: url("./assets/image/bcg.png");*/
   background-size: cover;
   background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 .container {
   max-width: 1350px;
-  margin: 0 calc(10%);
+  margin: 0 90px;
 }
 
 .arab {
@@ -24,12 +21,6 @@
 }
 
 @media screen and (max-width: 850px) {
-  .container {
-    padding: 20px;
-  }
-}
-
-@media screen and (max-width: 390px) {
   .container {
     padding: 20px;
   }

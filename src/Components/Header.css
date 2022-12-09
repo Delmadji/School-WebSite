@@ -6,7 +6,6 @@
 }
 .header {
   background-color: var(--mainColor);
-  width: 100%;
 }
 
 .header .container {
@@ -147,14 +146,5 @@
   .header .container {
     margin: 0;
     padding: 0 10px 0 10px;
-  }
-}
-
-@media screen and (max-width: 390px) {
-  .header {
-    width: 100%;
-  }
-  .header .container {
-    margin: 20px;
   }
 }

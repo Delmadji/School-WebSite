@@ -32,7 +32,7 @@ function Classes() {
             pagination={{
               clickable: true,
             }}
-            navigation={false}
+            navigation={{ clickable: true }}
             modules={[FreeMode, Pagination, Navigation]}
             breakpoints={{
               // when window width is >= 320px

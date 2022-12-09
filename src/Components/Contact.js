@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Contact.css";
+
 import { useTranslation } from "react-i18next";
 
 function Contact() {
