@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-
 import Header from "./Components/Header";
 import Home from "./Components/Home";
 import About from "./Components/About";
@@ -14,8 +13,6 @@ import Services from "./Components/Services";
 import TeacherSection from "./Components/TeacherSection";
 import TestimonialSection from "./Components/TestimonialSection";
 import Footer from "./Components/Footer";
-import SlideSwipeTest from "./Components/SlideSwipeTest";
-import Translation from "./Components/Translation";
 
 function App() {
   return (
@@ -42,8 +39,6 @@ function App() {
       <Contact />
       <Blog />
       <Footer />
-
-      <Translation />
     </>
   );
 }

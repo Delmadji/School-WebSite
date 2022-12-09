@@ -81,7 +81,18 @@
 }
 
 @media screen and (max-width: 450px) {
+  .contact__right form {
+    max-width: 390px;
+  }
+  .contact__right .name,
+  .contact__right .email {
+    height: 60px;
+    width: 315px;
+    border: none;
+    border-radius: 10px;
+    padding-right: 20px;
+  }
   .contact__right .message {
-    max-width: 360px;
+    max-width: 340px;
   }
 }

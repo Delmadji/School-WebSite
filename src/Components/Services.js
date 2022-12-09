@@ -40,8 +40,8 @@ function Services() {
             pagination={{
               clickable: true,
             }}
-            navigation={{ clickable: true }}
-            modules={[FreeMode, Pagination, Navigation]}
+            navigation={false}
+            modules={[FreeMode, Pagination]}
             breakpoints={{
               // when window width is >= 320px
               320: {
