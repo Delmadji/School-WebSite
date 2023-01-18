@@ -14,12 +14,15 @@ const BootstrapInput = styled(InputBase)(({ theme }) => ({
     marginTop: theme.spacing(0),
   },
   "& .MuiInputBase-input": {
+    width: "40px",
+    height: "30px",
     borderRadius: 4,
     position: "relative",
-    backgroundColor: "white" /*theme.palette.background.paper,*/,
-    border: "1px solid #ced4da",
+    color: "white",
+    backgroundColor: "#5faea1" /*theme.palette.background.paper,*/,
+    border: "1px solid #5faea1",
     fontSize: 16,
-    padding: "2px 26px 2px 12px",
+    padding: "4px 30px 2px 12px",
     transition: theme.transitions.create(["border-color", "box-shadow"]),
     // Use the system font instead of the default Roboto font.
     fontFamily: [
@@ -38,6 +41,7 @@ const BootstrapInput = styled(InputBase)(({ theme }) => ({
       borderRadius: 4,
       borderColor: "#80bdff",
       boxShadow: "0 0 0 0.2rem rgba(0,123,255,.25)",
+      color: "#fff",
     },
   },
 }));

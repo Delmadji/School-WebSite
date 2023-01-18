@@ -91,6 +91,7 @@
     top: 0;
     bottom: 0;
     left: 0;
+    z-index: 10;
   }
 
   .headerLeft .headerLeft__list.Active .MuiSvgIcon-root {
